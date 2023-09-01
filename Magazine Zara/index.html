@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Zara</title>
+  <link rel="stylesheet" href="style.css">   
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <section id="carrinho" 
+    class="fixed top-0 right-[0px] bg-orange-100 h-screen w-[360px] text-gray-900 duration-200 border-l border-gray-900 p-5 flex flex-col justify-between">
+    <div id="cabecalho-carrinho" 
+    class="flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark text-slate-700 hover:text-slate-900"></i></button>
+    </div>
+    <section id="produtos-carrinho">      
+      
+      <p>Casaco Reto com Lã</p>
+      <p>Jaqueta com Efeito Camurça</p>
+    </section>
+    <p id="preco-total">$200,00</p>
+    <button class="bg-slate-100 text-slate-900 p-1">Finalizar compra</button>
+  </section>
+  <header class="flex bg-orange-100 p-2 justify-between">
+    <img class="h-16" src="./assets/logo/logo Zara.jpg" alt="Logo da Magazine Zara">
+    <div class="text-gray-900 flex gap-2 items-end mx-2">
+      <button id="abrir-carrinho"><i class="fa-solid fa-user"></i></button>
+      <button><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>    
+  </header>
+  <main>
+    <section id="container-produto" class="flex flex-wrap"></section>      
+  </main>
+  <script type="module" src="./main.js"></script>
+  
+</body>
+</html>
